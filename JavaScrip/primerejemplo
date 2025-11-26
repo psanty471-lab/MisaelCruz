@@ -1,28 +1,26 @@
-//el error estaba en el HTML se movio el script al footer, por un tema DOM ya que existe otro formulario en la misma pagina.
-document.getElementById("calcular").addEventListener("click", function(){
-    let num1 = parseFloat(document.getElementById("numero1").value);
-    let num2 = parseFloat(document.getElementById("numero2").value);
-    let operacion = document.getElementById("operacion").value;
-    let resultado = document.getElementById("resultado");
+console.log("Hola Mundo");
+alert("Hola Mundo, esto es un alert") 
 
-    if(isNaN(num1)||isNaN(num2)){
-        resultado.textContent = "Ingrese números Valido";
-        return;
-    }
-function calcular(a,b, op){
-    switch (op) {
-        case "suma":
-            return a+b;     
-        case "resta":
-            return a-b;
-        case "multiplicacion":
-            return a*b;
-        case "division":
-            return a/b;
-        default:
-            return "Operación Inválida"
-    }
+function triste(){
+    document.getElementById('carita').src='images/sad.png';
+    alert("Po que ta triste mano");
 }
-let resultadoFinal = calcular(num1,num2,operacion);
-resultado.textContent="El Resultado es: "+resultadoFinal;
-})
+function feliz(){
+    document.getElementById('carita').src='images/happy.png';
+}
+function cambiarColor(){
+    document.getElementById('menu').style.color='#eed33aff';
+
+}
+function cambiarLogo(){
+    document.getElementById('logo').src='images/logo2.jpg';
+}
+function cambiarFondo(){
+     document.getElementById('menu').style.background='#524604';
+}
+function cambiodeTexto(){
+    document.getElementById('Subtitulo').textContent="YA LE SE AL JS";
+}
+function fondoAside(){
+    document.getElementById('aside').style.background='#f584f5ff';
+}
