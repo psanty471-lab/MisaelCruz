@@ -18,6 +18,10 @@ function cambiarLogo(){
 function cambiarFondo(){
      document.getElementById('menu').style.background='#d6d4c6ff';
 }
+function girartemperatura(){
+    document.getElementById('temperatura').style.transform="rotate(45deg)";
+    alert("imagen girada")
+}
 function cambiodeTexto(){
     document.getElementById('Subtitulo').textContent="tengan paciencia, aun no se usar esta cosa"
 }
