@@ -36,3 +36,4 @@ function fondoAside(){
 function nuevotitulo(){
     document.querySelector('title').textContent = "Tratando de usar Java Scrip";
     alert("titulo cambiado correctamente")
+}
