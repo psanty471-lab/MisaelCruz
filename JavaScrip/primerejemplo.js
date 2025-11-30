@@ -41,3 +41,7 @@ function nuevotitulo(){
     document.querySelector('title').textContent = "Tratando de usar Java Scrip";
     alert("titulo cambiado correctamente")
 }
+function cambiarFondo(){
+     document.getElementById('header').style.background='#817538ff';
+     alert("Fondo nuevo, misma esencia. Pero con más estilo");
+}
