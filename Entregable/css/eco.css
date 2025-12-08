@@ -1,0 +1,88 @@
+:root {
+  --warm-bg: #dba851;
+  --warm-primary: #B3542A; /* terracota */
+  --warm-secondary: #6B8E23; /* oliva */
+  --warm-text: #2F2A26; /* marrón oscuro */
+  --warm-accent: #DDB892; /* arena */
+  --border: #E5D7C8;
+}
+
+body.theme-warm {
+  background-color: var(--warm-bg);
+  color: var(--warm-text);
+}
+
+.brand-text {
+  font-weight: 700;
+  color: var(--warm-primary);
+  letter-spacing: 0.2px;
+}
+
+.hero-warm {
+  background: linear-gradient(180deg, #FDF7EE 0%, #FAF3E7 100%);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.hero-warm h1 { color: var(--warm-primary); }
+.hero-warm .lead { color: #6c5f57; }
+
+.product-card {
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(47, 42, 38, 0.08);
+}
+
+.btn-primary {
+  background-color: var(--warm-primary);
+  border-color: var(--warm-primary);
+}
+.btn-primary:hover { background-color: #9E4925; border-color: #9E4925; }
+
+.btn-outline-primary {
+  color: var(--warm-primary);
+  border-color: var(--warm-primary);
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: var(--warm-primary);
+  border-color: var(--warm-primary);
+}
+
+.link-primary { color: var(--warm-secondary); }
+.link-primary:hover { text-decoration: underline; }
+
+.testimonial {
+  background-color: #fff;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--warm-secondary);
+  border-radius: 8px;
+  padding: 16px;
+  color: #574d46;
+}
+
+.site-footer {
+  background-color: #fff;
+  border-top: 1px solid var(--border);
+}
+.footer-title {
+  font-weight: 700;
+  color: var(--warm-text);
+  margin-bottom: 0.5rem;
+}
+.footer-link {
+  color: var(--warm-secondary);
+  text-decoration: none;
+}
+.footer-link:hover { text-decoration: underline; }
+.footer-text { color: #7A6F66; }
+.footer-sep {
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+/* Tabla del carrito */
+table.table thead th { color: var(--warm-text); }
+table.table tfoot th { color: var(--warm-text); }

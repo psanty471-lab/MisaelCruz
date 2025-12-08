@@ -1,42 +1,131 @@
-<!DOCTYPE html>
-<html>
-    <link rel="stylesheet" href="estilos.css">
-    <head>
-        <title></title>
-        <link rel="icon" href="images/logo(1).jpg">
-    </head>
-    <body>
-       <header>
-            <img src="images/logo(1).jpg" alt="logo senati" with="300" height="300">
-            <h1></h1>
-            <h2></h2>
-       </header>
-       <nav>
-          <ul id="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Mi Primera Pagina.html">Primera Pagina</a></li>
-            <li><a href="Segunda Pagina.html">Segunda Pagina</a></li>
-            <li><a href="Tercera Pagina.html">Tercera Pagina</a></li>
-            <li><a href="Cuarta Pagina.html">Cuarta Pagina</a></li>
-            <li><a href="Quinta Pagina.html">Quinta Pagina</a></li>
-            <li><a href="Pagina Personal.html">Pagina Personal</a></li>
-            <li id="ENTREGABLE"><a href="ENTREGABLE.html">Entregable</a></li>
-           </ul> 
-       </nav>
-       <section>
-        <article>
-        </article>
-        <article>
-        </article>
-        <aside> </aside>
-       </section>
-       <footer>
-        <a href="https://github.com/psanty471-lab/MisaelCruz" target="_blank">Repositorio GitHub</a>
-        <a href="https://senati.blackboard.com" target="_blank">Blackboard</a>
-            <p>2025 - Segundo Semestre - Todo los Derechos Reservados </p>
-       </footer>
-    </body>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Producto – EcoMarket</title>
+   <link rel="icon" type="image/x-icon" href="ecoimages/icono_Eco.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/eco.css" />
+</head>
+<body class="theme-warm">
+  <header class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="EcoMarket.html">
+        <img src="ecoimages/Logo_Eco.png" alt="EcoMarket" style="height:300px;width:auto;">
+        <span class="brand-text"><p><h1>Tu mercado, natural y fresco</p> </h1></span>
+      </a>
+     <nav id="mainNav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="EcoMarket.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tienda.html">Tienda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros.html">Acerca de...</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="carrito.html">🛒 <span id="cartCount">0</span></a>
+        </li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+  <section class="container py-4">
+    <div id="homeCarousel" class="carousel slide rounded overflow-hidden shadow-sm">
+      <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+  </header>
+
+  <main class="container py-4">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <img id="prodImg" src="img/default.jpg" alt="Producto" class="w-100 rounded shadow-sm" />
+      </div>
+      <div class="col-md-6">
+        <h1 id="prodName">Producto</h1>
+        <p class="lead">Precio: <span id="prodPrice">S/.0.00</span></p>
+        <p id="prodDesc">Descripción breve del producto destacando su frescura, origen y beneficios.</p>
+        <div class="d-flex gap-2">
+          <button id="addBtn" class="btn btn-primary">Añadir al carrito</button>
+          <a href="tienda.html" class="btn btn-outline-primary">Volver a tienda</a>
+        </div>
+      </div>
+    </div>
+  </main>
+<footer class="site-footer py-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <div class="d-flex align-items-center gap-2">
+            <img src="ecoimages/Logo_Eco.png" alt="EcoMarket" style="height:200px;width:auto;">
+            <span class="brand-text">EcoMarket</span>
+          </div>
+          <p class="mt-2 small">Del campo a tu mesa. Productos frescos y responsables.</p>
+        </div>
+        <div class="col-md-4">
+          <h6 class="footer-title">Enlaces</h6>
+          <ul class="list-unstyled">
+            <li><a href="EcoMarket.html" class="footer-link">Inicio</a></li>
+            <li><a href="tienda.html" class="footer-link">Tienda</a></li>
+            <li><a href="nosotros.html" class="footer-link">Nosotros</a></li>
+            <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+            <li><a href="carrito.html" class="footer-link">Carrito</a></li>
+            <li><a href="reclamaciones.html" class="footer-link">Libro de Reclamaciones</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6 class="footer-title">Contacto</h6>
+          <ul class="list-unstyled">
+            <li class="footer-text">Puno, Perú</li>
+            <li class="footer-text">atencion@ecomarket.pe</li>
+            <li class="footer-text">+51 999 999 999</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-sep my-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <p class="m-0 small">© EcoMarket 2025</p>
+        <div class="d-flex gap-3">
+          <a class="footer-link" href="#">Facebook</a>
+          <a class="footer-link" href="#">Instagram</a>
+          <a class="footer-link" href="#">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    var params = new URLSearchParams(window.location.search);
+    var id = params.get('id');
+    var name = 'Producto', price = 0, img = 'img/default.jpg', desc = 'Descripción breve.';
+
+    if (id === 'brocoli') { name='Brócoli'; price=8; img='ecoimages/brocolito.png'; style='height:400px;width:309px'; desc='Brócoli fresco, rico en vitaminas y fibra.'; }
+    else if (id === 'tomate') { name='Tomate'; price=4.5; img='ecoimages/tomate.png'; desc='Tomate orgánico de sabor intenso y natural.'; }
+    else if (id === 'cebolla') { name='Cebolla'; price=5; img='ecoimages/cebollita.jpg'; desc='Cebolla seleccionada para tus recetas.'; }
+    else if (id === 'zapallo') { name='Zapallo'; price=2; img='ecoimages/zapallito.jpg'; desc='Zapallo dulce y versátil.'; }
+    else if (id === 'quinua') { name='Quinua'; price=14; img='ecoimages/quinua.jpg'; desc='Quinua real, proteína de alto valor.'; }
+    else if (id === 'lechuga') { name='Lechuga'; price=3; img='ecoimages/lecshuga.jpg'; desc='Lechuga fresca y crujiente.'; }
+    else if (id === 'papa') { name='Papa'; price=3.5; img='ecoimages/papa.jpg'; desc='Papa andina, versátil y nutritiva.'; }
+    else if (id === 'zanahoria') { name='Zanahoria'; price=3; img='ecoimages/zani.jpg'; desc='Zanahoria dulce, ideal para ensaladas.'; }
+    else if (id === 'arvejas') { name='Arvejas'; price=7; img='ecoimages/arvejas.jpg'; desc='Arvejas tiernas y sabrosas.'; }
+    else { id='brocoli'; name='Brócoli'; price=8; img='ecoimages/brocolito.jpg'; desc='Brócoli fresco, rico en vitaminas y fibra.'; }
+
+    document.getElementById('prodName').textContent = name;
+    document.getElementById('prodPrice').textContent = 'S/.' + price.toFixed(2);
+    document.getElementById('prodImg').src = img;
+    document.getElementById('prodDesc').textContent = desc;
+
+    document.getElementById('addBtn').addEventListener('click', function () {
+      addToCart(id, name, price);
+      alert(name + ' añadido al carrito');
+    });
+  </script>
+
+  <script src="js/eco.js"></script>
+</body>
 </html>
-
-
-
